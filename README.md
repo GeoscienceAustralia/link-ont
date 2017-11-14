@@ -18,16 +18,17 @@ The canonical location of this ontology online is:
 * [Dataset examples](examples/datasets.md)
 * [Mandates examples](examples/mandates.md)
 
+
 ## License
 This ontology and all other content in this repository are licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) (also [LICENSE](LICENSE)).
 
 
-## Authors and Contact
+## Contacts
 **Nicholas Car**
-Geoscience Australia  
+Data Architect   
 <nicholas.car@ga.gov.au>  
-<http://orcid.org/0000-0002-8742-7730>
+<http://orcid.org/0000-0002-8742-7730>  
 
-**Robert Newham**
-LINK Project Officer
+**Robert Newham**  
+LINK Project Officer  
 <robert.newham@ga.gov.au>  
