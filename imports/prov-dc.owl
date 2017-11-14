@@ -1,0 +1,119 @@
+@prefix : <http://www.w3.org/ns/prov-dc##> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/ns/prov-dc#> .
+
+<http://www.w3.org/ns/prov-dc#> rdf:type owl:Ontology ;
+                                 owl:versionIRI <http://www.w3.org/ns/prov-dc-20130430> ;
+                                 owl:imports <http://www.w3.org/ns/prov-o#> ;
+                                 owl:versionInfo "2013-04-30"@en ;
+                                 frbr:abridgement <http://www.w3.org/ns/prov-dc-refinements#> ;
+                                 rdfs:seeAlso <http://www.w3.org/ns/prov> ;
+                                 rdfs:comment """This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page).
+
+If you wish to make comments regarding this document, please send them to public-prov-comments@w3.org (subscribe public-prov-comments-request@w3.org, archives http://lists.w3.org/Archives/Public/public-prov-comments/). All feedback is welcome."""@en ;
+                                 rdfs:label "Dublin Core extensions of the W3C PROVenance Interchange Ontology (PROV-O)"@en ;
+                                 frbr:complement <http://www.w3.org/ns/prov-dc-directmappings#> ;
+                                 rdfs:seeAlso <http://www.w3.org/TR/2013/NOTE-prov-dc-20130430/> .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/prov#Accept
+prov:Accept rdf:type owl:Class ;
+            rdfs:subClassOf prov:Activity ;
+            rdfs:label "Accept"@en ;
+            prov:definition "Activity that identifies the acceptance of a resource (e.g., an article in a conference)"@en .
+
+
+###  http://www.w3.org/ns/prov#Contribute
+prov:Contribute rdf:type owl:Class ;
+                rdfs:subClassOf prov:Activity ;
+                rdfs:label "Contribute"@en ;
+                prov:definition "Activity that identifies any contribution of an agent to a resource."@en .
+
+
+###  http://www.w3.org/ns/prov#Contributor
+prov:Contributor rdf:type owl:Class ;
+                 rdfs:subClassOf prov:Role ;
+                 rdfs:label "Contributor"@en ;
+                 prov:definition "Role with the function of having responsibility for making contributions to a resource. The Agent assigned to this role is associated with a Modify or Create Activities"@en .
+
+
+###  http://www.w3.org/ns/prov#Copyright
+prov:Copyright rdf:type owl:Class ;
+               rdfs:subClassOf prov:Activity ;
+               rdfs:label "Copyright"@en ;
+               prov:definition "Activity that identifies the Copyrighting activity associated to a resource."@en .
+
+
+###  http://www.w3.org/ns/prov#Create
+prov:Create rdf:type owl:Class ;
+            rdfs:subClassOf prov:Contribute ;
+            rdfs:label "Create"@en ;
+            prov:definition "Activity that identifies the creation of a resource"@en .
+
+
+###  http://www.w3.org/ns/prov#Creator
+prov:Creator rdf:type owl:Class ;
+             rdfs:subClassOf prov:Contributor ;
+             rdfs:label "Creator"@en ;
+             prov:definition "Role with the function of creating a resource. The Agent assigned to this role is associated with a Create Activity"@en .
+
+
+###  http://www.w3.org/ns/prov#Modify
+prov:Modify rdf:type owl:Class ;
+            rdfs:subClassOf prov:Activity ;
+            rdfs:label "Modify"@en ;
+            prov:definition "Activity that identifies the modification of a resource."@en .
+
+
+###  http://www.w3.org/ns/prov#Publish
+prov:Publish rdf:type owl:Class ;
+             rdfs:subClassOf prov:Activity ;
+             rdfs:label "Publish"@en ;
+             prov:definition "Activity that identifies the publication of a resource"@en .
+
+
+###  http://www.w3.org/ns/prov#Publisher
+prov:Publisher rdf:type owl:Class ;
+               rdfs:subClassOf prov:Role ;
+               rdfs:label "Publisher"@en ;
+               prov:definition "Role with the function of publishing a resource. The Agent assigned to this role is associated with a Publish Activity"@en .
+
+
+###  http://www.w3.org/ns/prov#Replace
+prov:Replace rdf:type owl:Class ;
+             rdfs:subClassOf prov:Activity ;
+             rdfs:label "Replace"@en ;
+             prov:definition "Activity that identifies the replacement of a resource."@en .
+
+
+###  http://www.w3.org/ns/prov#RightsAssignment
+prov:RightsAssignment rdf:type owl:Class ;
+                      rdfs:subClassOf prov:Activity ;
+                      rdfs:label "RightsAssignment"@en ;
+                      prov:definition "Activity that identifies the rights assignment of a resource."@en .
+
+
+###  http://www.w3.org/ns/prov#RightsHolder
+prov:RightsHolder rdf:type owl:Class ;
+                  rdfs:subClassOf prov:Role ;
+                  rdfs:label "RightsHolder"@en ;
+                  prov:definition "Role with the function of owning or managing rights over a resource. The Agent assigned to this role is associated with a RightsAssignment Activity"@en .
+
+
+###  http://www.w3.org/ns/prov#Submit
+prov:Submit rdf:type owl:Class ;
+            rdfs:subClassOf prov:Activity ;
+            rdfs:label "Submit"@en ;
+            prov:definition "Activity that identifies the issuance (e.g., publication) of a resource."@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
