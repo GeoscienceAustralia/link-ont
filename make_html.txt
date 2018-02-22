@@ -15,6 +15,3 @@ Things to do in order to create an HTML version of the ontology
 
 * change external JS, CSS & favicon links to local:
     * http://eelst.cs.unibo.it/apps/LODE/ --> /static/
-
-* remove favicon:
-* <link rel="shortcut icon" href="http://eelst.cs.unibo.it/apps/LODE/favicon.ico" />
